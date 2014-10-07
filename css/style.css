@@ -5,6 +5,10 @@
 /* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
 /* Not all elements are defined in this file, so you'll most likely want to refer to the html as well. */
 
+/* Fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
 
 /* basic elements */
 html {
@@ -12,26 +16,30 @@ html {
 	padding: 0;
 	}
 body { 
-	font: georgia, sans-serif;
-	color: #555753; 
-	background: #fff; 
-	margin: 0; 
-	padding: 0;
+	font-family: Helvetica, sans-serif;
+	color: blue; 
+	/*background: gray;*/
+	margin: 0; /* outside */ 
+	padding: 0; /* inside */
 	}
 p { 
 	margin-top: 0; 
-	text-align: justify;
+	text-align: center;
 	}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Pacifico', cursive;
+}
 h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
+	/*font: italic normal 1.4em georgia, sans-serif;*/
+	font-family: 'Poiret One', cursive;
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
 	color: #7D775C;
 	}
 a:link { 
-	font-weight: bold; 
+	font-weight: 100; 
 	text-decoration: none; 
-	color: #B7A5DF;
+	color: #0ce7ab;
 	}
 a:visited { 
 	font-weight: bold; 
@@ -40,10 +48,12 @@ a:visited {
 	}
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
-	color: #9685BA;
+	color: yellow;
+	/*font-size: 2em;*/
 	}
 abbr {
-	border-bottom: none;
+	/*border-bottom: none; */
+	border-bottom: dashed;
 	}
 
 
@@ -66,7 +76,14 @@ header {
 }
 
 .summary {
-
+	/* height is scaled automatically */
+	font-family: 'Poiret One', cursive;
+	width: 350px;
+	border-width: 5px 10px; /* N E S W  for 4 values, N/S and E/W for 2 values*/
+	border-color: red;
+	border-style: dotted;
+	padding: 125px;
+	margin: 50px;
 	}
 .summary p {
 
